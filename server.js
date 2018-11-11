@@ -22,7 +22,8 @@ app.get("/", function (req, res) {
 // your first API endpoint... 
 app.get("/api/timestamp/:date_string?", function (req, res) {
   
-  let date;
+  let date; 
+ 
   if (req.params.date_string === undefined){
     date = new Date();
   } else if (req.params.date_string.match(/\d{13}/)){
